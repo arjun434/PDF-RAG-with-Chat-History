@@ -19,7 +19,7 @@ load_dotenv()
 os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN")
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-st.title("Conversational RAG with PDF uploads and chat history")
+st.title("Conversational RAG Chatbot with PDF uploads and chat history")
 st.write("Upload PDFs and chat with their content")
 
 api_key = st.text_input("Enter your Groq API key", type="password")
